@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modulars — Creative Design Agency</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Optional: prettier typography defaults -->
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+  </head>
+
+  <body class="bg-[#F7FAF8] text-slate-900">
+    <!-- Top Nav -->
+    <header class="w-full">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex items-center justify-between py-5">
+          <div class="flex items-center gap-2">
+            <div class="h-9 w-9 rounded-full border border-slate-200 bg-white grid place-items-center">
+              <span class="text-[10px] font-semibold tracking-widest">M</span>
+            </div>
+            <span class="font-semibold tracking-wide">MODULARS</span>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-8 text-sm text-slate-700">
+            <a class="hover:text-slate-900" href="#home">Home</a>
+            <a class="hover:text-slate-900" href="#about">About</a>
+            <a class="hover:text-slate-900" href="#blog">Blog</a>
+            <a class="hover:text-slate-900" href="#contact">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a href="#contact" class="hidden sm:inline-flex text-sm font-medium text-slate-700 hover:text-slate-900">
+              Sign In
+            </a>
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-slate-800"
+            >
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="relative">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center py-10 lg:py-16">
+          <!-- Left -->
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+              Creative studio • Design & development
+            </div>
+
+            <h1 class="mt-5 text-4xl sm:text-5xl font-semibold leading-tight">
+              We’re a <br class="hidden sm:block" />
+              creative design <br class="hidden sm:block" />
+              agency.
+            </h1>
+
+            <p class="mt-4 max-w-md text-slate-600">
+              A clean & modern agency template for startups and growing teams.
+              Build fast, look premium, convert better.
+            </p>
+
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+              >
+                Get in touch
+              </a>
+              <a
+                href="#projects"
+                class="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-800 ring-1 ring-slate-200 hover:bg-slate-50"
+              >
+                <span class="grid h-9 w-9 place-items-center rounded-full bg-emerald-100 text-emerald-700">
+                  ▶
+                </span>
+                Watch Video
+              </a>
+            </div>
+          </div>
+
+          <!-- Right (hero collage) -->
+          <div class="relative">
+            <!-- soft glow -->
+            <div class="absolute -inset-6 blur-3xl opacity-70 bg-gradient-to-r from-emerald-100 via-teal-100 to-slate-100 rounded-[2.5rem]"></div>
+
+            <div class="relative rounded-[2.5rem] border border-slate-200 bg-white/60 backdrop-blur p-5">
+              <div class="grid grid-cols-3 gap-4">
+                <!-- Replace these images -->
+                <div class="col-span-1 rounded-[2rem] overflow-hidden h-72">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"
+                    alt="Interior"
+                  />
+                </div>
+                <div class="col-span-1 rounded-[2rem] overflow-hidden h-72 translate-y-6">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80"
+                    alt="Interior"
+                  />
+                </div>
+                <div class="col-span-1 rounded-[2rem] overflow-hidden h-72">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80"
+                    alt="Interior"
+                  />
+                </div>
+              </div>
+
+              <!-- little decorative dots -->
+              <div class="pointer-events-none absolute -left-3 top-10 h-3 w-3 rounded-full bg-emerald-400"></div>
+              <div class="pointer-events-none absolute -right-3 bottom-14 h-3 w-3 rounded-full bg-slate-400"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logos pill -->
+        <div class="pb-12">
+          <div class="mx-auto max-w-4xl rounded-full bg-emerald-50/80 border border-emerald-100 px-6 py-4">
+            <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm font-semibold text-slate-700">
+              <span>Google</span>
+              <span>Slack</span>
+              <span>Agworld</span>
+              <span>RioTinto</span>
+              <span>Heroku</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-14">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <p class="text-xs font-semibold tracking-widest text-slate-500">OUR SERVICES</p>
+            <h2 class="mt-2 text-2xl sm:text-3xl font-semibold">
+              We offer a wide range of <br class="hidden sm:block" /> design services
+            </h2>
+          </div>
+
+          <div class="hidden sm:flex items-center gap-2">
+            <button class="h-10 w-10 rounded-full bg-white ring-1 ring-slate-200 hover:bg-slate-50">←</button>
+            <button class="h-10 w-10 rounded-full bg-slate-900 text-white hover:bg-slate-800">→</button>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <!-- card -->
+          <div class="rounded-3xl bg-white ring-1 ring-slate-200 overflow-hidden">
+            <img
+              class="h-44 w-full object-cover"
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+              alt="Branding"
+            />
+            <div class="p-6">
+              <h3 class="font-semibold text-lg">Branding</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Create a standout identity that connects with your audience.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-3xl bg-white ring-1 ring-slate-200 overflow-hidden">
+            <img
+              class="h-44 w-full object-cover"
+              src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80"
+              alt="Web design"
+            />
+            <div class="p-6">
+              <h3 class="font-semibold text-lg">Web Design</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Modern, responsive websites designed for speed and conversion.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-3xl bg-white ring-1 ring-slate-200 overflow-hidden">
+            <img
+              class="h-44 w-full object-cover"
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+              alt="Graphic design"
+            />
+            <div class="p-6">
+              <h3 class="font-semibold text-lg">Graphic Design</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Scroll-stopping visuals for campaigns, socials, and product.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-14">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <!-- Left imagery -->
+          <div class="relative">
+            <div class="rounded-[2.5rem] overflow-hidden ring-1 ring-slate-200 bg-white">
+              <div class="grid grid-cols-2">
+                <img
+                  class="h-72 w-full object-cover"
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
+                  alt="Team"
+                />
+                <img
+                  class="h-72 w-full object-cover"
+                  src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1000&q=80"
+                  alt="Workspace"
+                />
+              </div>
+            </div>
+
+            <div class="absolute -bottom-6 left-6 rounded-3xl bg-white px-5 py-4 ring-1 ring-slate-200 shadow-sm">
+              <p class="text-xs font-semibold tracking-widest text-slate-500">ALL DESIGNERS</p>
+              <p class="mt-1 text-sm text-slate-700">Available for new projects</p>
+            </div>
+          </div>
+
+          <!-- Right content -->
+          <div>
+            <p class="text-xs font-semibold tracking-widest text-slate-500">ABOUT US</p>
+            <h2 class="mt-2 text-2xl sm:text-3xl font-semibold">
+              We are an extension of <br class="hidden sm:block" /> your creative team
+            </h2>
+
+            <p class="mt-4 text-slate-600">
+              At the start of every project, we customize a detailed plan so you can set expectations,
+              hit milestones, and ship confidently.
+            </p>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-3xl bg-white ring-1 ring-slate-200 p-6">
+                <div class="text-3xl font-semibold">48%</div>
+                <p class="mt-2 text-sm text-slate-600">Avg. faster delivery with our process.</p>
+              </div>
+              <div class="rounded-3xl bg-white ring-1 ring-slate-200 p-6">
+                <div class="text-3xl font-semibold">26%</div>
+                <p class="mt-2 text-sm text-slate-600">Higher engagement from refined visuals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-14">
+      <div class="mx-auto max-w-6xl px-4">
+        <p class="text-xs font-semibold tracking-widest text-slate-500">OUR PROCESS</p>
+        <h2 class="mt-2 text-2xl sm:text-3xl font-semibold">A simple, yet effective <br class="hidden sm:block" /> three step process</h2>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-3">
+          <div class="rounded-3xl bg-emerald-50 ring-1 ring-emerald-100 p-6">
+            <div class="text-3xl font-semibold text-emerald-900">01.</div>
+            <h3 class="mt-3 font-semibold text-lg">Project idea</h3>
+            <p class="mt-2 text-sm text-slate-600">Align on scope, goals, and success metrics.</p>
+          </div>
+
+          <div class="rounded-3xl bg-white ring-1 ring-slate-200 p-6">
+            <div class="text-3xl font-semibold">02.</div>
+            <h3 class="mt-3 font-semibold text-lg">Brainstorming</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Explore creative directions and define key milestones with you.
+            </p>
+          </div>
+
+          <div class="rounded-3xl bg-white ring-1 ring-slate-200 p-6">
+            <div class="text-3xl font-semibold">03.</div>
+            <h3 class="mt-3 font-semibold text-lg">Execution</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Design, iterate, and deliver final assets you can ship today.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Banner -->
+    <section id="projects" class="py-14">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="relative overflow-hidden rounded-[2.5rem] bg-[#123D3C] text-white">
+          <div class="absolute inset-0 opacity-25">
+            <img
+              class="h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=1800&q=80"
+              alt="Projects"
+            />
+          </div>
+
+          <div class="relative grid gap-8 p-10 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p class="text-xs font-semibold tracking-widest text-white/70">PORTFOLIO</p>
+              <h3 class="mt-2 text-2xl sm:text-3xl font-semibold">
+                A quick glance of our <br class="hidden sm:block" /> past projects
+              </h3>
+            </div>
+
+            <div class="flex items-center justify-between gap-4 lg:justify-end">
+              <p class="max-w-sm text-sm text-white/80">
+                Browse all projects to see how we turn ideas into premium, conversion-focused design.
+              </p>
+              <button class="grid h-14 w-14 place-items-center rounded-full bg-white/15 ring-1 ring-white/20 hover:bg-white/20">
+                ▶
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-14">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="text-center">
+          <h2 class="text-2xl sm:text-3xl font-semibold">Share the features that <br class="hidden sm:block" /> help your customers</h2>
+          <p class="mt-3 mx-auto max-w-2xl text-slate-600">
+            Highlight what matters most—documentation, customer support, and content that builds trust.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <div class="rounded-3xl bg-white ring-1 ring-slate-200 p-8 text-center">
+            <div class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100">
+              ✎
+            </div>
+            <h3 class="mt-4 font-semibold">Blog</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Write articles and resources that educate and build authority.
+            </p>
+          </div>
+
+          <div class="rounded-3xl bg-white ring-1 ring-slate-200 p-8 text-center">
+            <div class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100">
+              ⧉
+            </div>
+            <h3 class="mt-4 font-semibold">Documentation</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Help users self-serve with clear product documentation.
+            </p>
+          </div>
+
+          <div class="rounded-3xl bg-white ring-1 ring-slate-200 p-8 text-center">
+            <div class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100">
+              ☺
+            </div>
+            <h3 class="mt-4 font-semibold">Customer</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Reduce churn with fast, friendly customer support systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-14">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-xs font-semibold tracking-widest text-slate-500">BLOG & ARTICLES</p>
+            <h2 class="mt-2 text-2xl sm:text-3xl font-semibold">Take a look at our latest <br class="hidden sm:block" /> articles and resources</h2>
+          </div>
+          <p class="max-w-sm text-sm text-slate-600">
+            The best agency is the one that’s obsessed with clients. We collaborate to ship memorable work.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl bg-white ring-1 ring-slate-200 overflow-hidden">
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=80" alt="Post">
+            <div class="p-6">
+              <span class="inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-100">Design</span>
+              <h3 class="mt-3 font-semibold leading-snug">What do we learn from running our 100 design sprints this year?</h3>
+              <p class="mt-2 text-sm text-slate-600">Lessons, patterns, and what we’d do differently next time.</p>
+              <div class="mt-4 text-xs text-slate-500">January 30, 2025</div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl bg-white ring-1 ring-slate-200 overflow-hidden">
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80" alt="Post">
+            <div class="p-6">
+              <span class="inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-100">Tutorial</span>
+              <h3 class="mt-3 font-semibold leading-snug">The difference between UI & UX design: a simple guide</h3>
+              <p class="mt-2 text-sm text-slate-600">Understand the roles, deliverables, and impact on product.</p>
+              <div class="mt-4 text-xs text-slate-500">January 12, 2025</div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl bg-white ring-1 ring-slate-200 overflow-hidden">
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&w=1200&q=80" alt="Post">
+            <div class="p-6">
+              <span class="inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-100">Business</span>
+              <h3 class="mt-3 font-semibold leading-snug">How marketing can help your business more than anything</h3>
+              <p class="mt-2 text-sm text-slate-600">A practical system for messaging, positioning, and growth.</p>
+              <div class="mt-4 text-xs text-slate-500">December 28, 2024</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="contact" class="py-14">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="rounded-[2.5rem] bg-white ring-1 ring-slate-200 p-10">
+          <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold">Sign up for our newsletter</h3>
+              <p class="mt-2 text-slate-600">Get design tips, resources, and updates—no spam.</p>
+            </div>
+
+            <form class="flex w-full max-w-md gap-3">
+              <input
+                type="email"
+                required
+                placeholder="Enter your email"
+                class="w-full rounded-full bg-slate-50 px-5 py-3 text-sm ring-1 ring-slate-200 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+              />
+              <button
+                type="submit"
+                class="shrink-0 rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-14">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div>
+            <div class="flex items-center gap-2">
+              <div class="h-9 w-9 rounded-full border border-slate-200 bg-white grid place-items-center">
+                <span class="text-[10px] font-semibold tracking-widest">M</span>
+              </div>
+              <span class="font-semibold tracking-wide">MODULARS</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">
+              Premium agency template built with Tailwind CSS. Simple, clean, and conversion-focused.
+            </p>
+            <div class="mt-4 flex items-center gap-3 text-slate-600">
+              <a class="hover:text-slate-900" href="#">Facebook</a>
+              <a class="hover:text-slate-900" href="#">Twitter</a>
+              <a class="hover:text-slate-900" href="#">Instagram</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-semibold">Pages</h4>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li><a class="hover:text-slate-900" href="#home">Home</a></li>
+              <li><a class="hover:text-slate-900" href="#about">About</a></li>
+              <li><a class="hover:text-slate-900" href="#projects">Portfolio</a></li>
+              <li><a class="hover:text-slate-900" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold">Product</h4>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li><a class="hover:text-slate-900" href="#">Features</a></li>
+              <li><a class="hover:text-slate-900" href="#">Pricing</a></li>
+              <li><a class="hover:text-slate-900" href="#">Overview</a></li>
+              <li><a class="hover:text-slate-900" href="#">Docs</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold">Overview</h4>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li><a class="hover:text-slate-900" href="#">Terms</a></li>
+              <li><a class="hover:text-slate-900" href="#">Privacy</a></li>
+              <li><a class="hover:text-slate-900" href="#">Support</a></li>
+              <li><a class="hover:text-slate-900" href="#">Press</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-slate-200 pt-6 text-sm text-slate-500 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <span>© <span id="year"></span> Modulars. All rights reserved.</span>
+          <span>Built with Tailwind CSS</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
