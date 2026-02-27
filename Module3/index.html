@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myng UI — Find Your Tribe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#F3F6FB] text-slate-900">
+    <!-- page -->
+     <!-- class="min-h-screen px-4 py-10" -->
+    <main >
+        <!-- class="mx-auto max-w-6xl -->
+      <div >
+        <!-- outer frame -->
+        <div class="bg-white shadow-lg ring-1 ring-black/5 overflow-hidden">
+          <!-- nav -->
+          <header class="px-6 lg:px-10 py-5">
+            <div class="flex items-center justify-between gap-4">
+              <!-- logo -->
+              <div class="flex items-center gap-2">
+                <div class="h-9 w-9 rounded-xl bg-slate-900 grid place-items-center text-white font-bold">
+                  M
+                </div>
+                <span class="font-semibold">Kashfeet Raza</span>
+              </div>
+
+              <!-- nav links -->
+              <nav class="hidden md:flex items-center gap-7 text-sm text-slate-600">
+                <a class="hover:text-slate-900" href="#features">Features</a>
+                <a class="hover:text-slate-900" href="#communities">Communities</a>
+                <a class="hover:text-slate-900" href="#events">Events</a>
+                <a class="hover:text-slate-900" href="#about">About Us</a>
+                <a class="hover:text-slate-900" href="#login">Login</a>
+              </nav>
+
+              <!-- right -->
+              <div class="flex items-center gap-3">
+                <button
+                  id="menuBtn"
+                  class="md:hidden h-10 w-10 rounded-xl bg-white ring-1 ring-slate-200 hover:bg-slate-50"
+                  aria-label="Open menu"
+                >
+                  ☰
+                </button>
+
+                <a
+                  href="#join"
+                  class="hidden sm:inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-slate-800"
+                >
+                  Join for Free →
+                </a>
+              </div>
+            </div>
+
+            <!-- mobile nav -->
+            <div id="mobileNav" class="md:hidden hidden mt-4">
+              <div class="rounded-2xl bg-white ring-1 ring-slate-200 p-4">
+                <div class="grid gap-3 text-sm text-slate-700">
+                  <a class="hover:text-slate-900" href="#features">Features</a>
+                  <a class="hover:text-slate-900" href="#communities">Communities</a>
+                  <a class="hover:text-slate-900" href="#events">Events</a>
+                  <a class="hover:text-slate-900" href="#about">About Us</a>
+                  <a class="hover:text-slate-900" href="#login">Login</a>
+                  <a class="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 font-semibold text-white" href="#join">
+                    Join for Free →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- hero -->
+<!-- HERO -->
+ <!-- lg:h-[600px] -->
+<section class="relative overflow-hidden rounded-[0px] h-[580px] ">
+
+  <!-- Background Image -->
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('pic.png');"
+  ></div>
+
+  <!--  -->
+  <!-- Dark Overlay for text visibility -->
+  <div class="absolute inset-0 bg-black/30"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 flex items-center justify-center h-full px-6 lg:px-10 text-center text-white">
+    <div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+        Find Your Tribe, <br />
+        Build Your Network.
+      </h1>
+
+      <p class="mt-5 mx-auto max-w-xl text-white/90 text-lg">
+        Connect with like-minded students for fun, friendships, and future opportunities.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="#join"
+          class="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-900 hover:bg-gray-100 transition"
+        >
+          Join for Free →
+        </a>
+
+        <button
+          class="inline-flex items-center gap-3 rounded-full bg-white/20 px-7 py-3 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/30 transition"
+        >
+          Explore Communities
+        </button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+            <!-- toast -->
+            <div id="toast" class="hidden mt-6">
+              <div class="mx-auto max-w-xl rounded-2xl bg-white ring-1 ring-slate-200 p-4 text-sm text-slate-700">
+                <span class="font-semibold">Info:</span>
+                <span id="toastText"></span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // mobile menu
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      menuBtn.addEventListener("click", () => mobileNav.classList.toggle("hidden"));
+
+      // toast
+      const toast = document.getElementById("toast");
+      const toastText = document.getElementById("toastText");
+      function showToast(msg) {
+        toastText.textContent = " " + msg;
+        toast.classList.remove("hidden");
+        clearTimeout(window.__t);
+        window.__t = setTimeout(() => toast.classList.add("hidden"), 2400);
+      }
+
+      document.getElementById("exploreBtn").addEventListener("click", () => {
+        showToast("Demo: Opening communities list…");
+      });
+    </script>
+  </body>
+</html>
